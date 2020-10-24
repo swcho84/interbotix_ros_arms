@@ -42,7 +42,7 @@
       <arg name="robot_model"                      value="$(arg robot_model)"/>
       <arg name="use_world_frame"                  value="$(arg use_world_frame)"/>
       <arg name="external_urdf_loc"                value="$(arg external_urdf_loc)"/>
-      <arg name="use_default_rviz"                 value="false"/>
+      <arg name="use_default_rviz"                 value="true"/>
     </include>
 
     <node

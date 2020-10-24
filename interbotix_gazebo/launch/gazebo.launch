@@ -25,6 +25,8 @@
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
   </include>
 
+  <!-- arm_controller gripper_controller -->
+
   <node
     name="controller_spawner"
     pkg="controller_manager"
@@ -32,7 +34,10 @@
     respawn="false"
     output="screen"
     ns="$(arg robot_name)"
-    args="arm_controller gripper_controller joint_state_controller"/>
+    args="joint_state_controller
+          gripper_controller
+          arm_controller
+					"/>
 
   <include file="$(find interbotix_descriptions)/launch/description.launch">
     <arg name="robot_name"                    value="$(arg robot_name)"/>

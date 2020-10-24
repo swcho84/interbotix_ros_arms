@@ -7,8 +7,8 @@
   <arg name="use_world_frame"               default="true"/>
   <arg name="external_urdf_loc"             default=""/>
   <arg name="load_gazebo_configs"           default="false"/>
-  <arg name="jnt_pub_gui"                   default="false"/>
-  <arg name="use_joint_pub"                 default="false"/>
+  <arg name="jnt_pub_gui"                   default="true"/>
+  <arg name="use_joint_pub"                 default="true"/>
   <arg name="use_default_rviz"              default="true"/>
   <arg name="rvizconfig"                    default="$(find interbotix_descriptions)/rviz/description.rviz" />
   <arg name="model"                         default="$(find interbotix_descriptions)/urdf/$(arg robot_model).urdf.xacro
