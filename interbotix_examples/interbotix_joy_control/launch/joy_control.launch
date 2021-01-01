@@ -19,10 +19,10 @@
   <node
     pkg="joy"
     type="joy_node"
-    name="ps3_joy"
+    name="xbox360_joy"
     output="screen"
     ns="$(arg robot_name)">
-    <param name="dev"               value="/dev/input/js0" />
+    <param name="dev"               value="/dev/input/js1" />
   </node>
 
   <node

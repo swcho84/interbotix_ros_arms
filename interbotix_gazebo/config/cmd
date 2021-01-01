@@ -1,0 +1,50 @@
+rostopic pub wx250s/arm_controller/command trajectory_msgs/JointTrajectory "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+joint_names: [waist, shoulder, elbow, forearm_roll, wrist_angle, wrist_rotate]
+points:
+- positions: [0.5, 1.0, 1.0, -1.0, 0.0, 0.0]
+  time_from_start: {secs: 1, nsecs: 0}" 
+
+rostopic pub /wx250s/gripper_controller/command trajectory_msgs/JointTrajectory "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+joint_names: [left_finger, right_finger]
+points:
+- positions: [0.0, 0.0]
+  velocities: [0.0, 0.0]
+  accelerations: [0.0, 0.0]
+  effort: [0.0, 0.0]
+  time_from_start: {secs: 1, nsecs: 0}" 
+
+
+rostopic pub /firefly/arm_controller/command trajectory_msgs/JointTrajectory "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+joint_names: [wx250s_waist, wx250s_shoulder, wx250s_elbow, wx250s_forearm_roll, wx250s_wrist_angle, wx250s_wrist_rotate]
+points:
+- positions: [0.0, -1.25, 1.25, 0.0, 0.0, 0.0]
+  time_from_start: {secs: 1, nsecs: 0}" 
+
+rostopic pub /firefly/gripper_controller/command trajectory_msgs/JointTrajectory "header:
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+joint_names: [wx250s_left_finger, wx250s_right_finger]
+points:
+- positions: [0.0, 0.0]
+  velocities: [0.0, 0.0]
+  accelerations: [0.0, 0.0]
+  effort: [0.0, 0.0]
+  time_from_start: {secs: 1, nsecs: 0}"

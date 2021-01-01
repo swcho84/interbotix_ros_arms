@@ -6,7 +6,7 @@
   <arg name="use_default_gripper_fingers"   default="true"/>
   <arg name="use_world_frame"               default="true"/>
   <arg name="external_urdf_loc"             default=""/>
-  <arg name="use_default_rviz"              default="false"/>
+  <arg name="use_default_rviz"              default="true"/>
   <arg name="gui"                           default="true"/>
   <arg name="debug"                         default="false"/>
   <arg name="paused"                        default="true"/>
